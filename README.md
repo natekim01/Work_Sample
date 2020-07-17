@@ -8,7 +8,7 @@ The following abstracts were accepted for persentations for conferences of the I
 
 
 Code Snippets: 
-- KTSS
+- KTSS:
  A project focused on learning the basics of MR Imaging. Without looking at already published code, I recreated the k-t sparse sense reconstruction algorithm using Python. 
-- Deep Learning Reconstruction
+- Deep Learning Reconstruction:
 Some code that has been developed in pursuing a deep learning reconstruction algorithm for MR Imaging. 
