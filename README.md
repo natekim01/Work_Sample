@@ -6,7 +6,6 @@ The following abstracts were accepted for persentations for conferences of the I
 - "Motion-resistant XDGRASP for free-breathing liver MRI: qualitative comparison with standard breath-hold hepatobiliary phase imaging" Kim N, ... , Otazo R. ISMRM 2020 Annual Conference and Exhibition
 - "MR SIGnature MAtching (MRSIGMA) with motion baseline drift adaptation for real-time volumetric motion tracking" Kim N,..., Otazo R. ISMRM 2020 Image Reconstruction and Data Sampling workshop.
 
-Currently working on a paper regarding MRSIGMA which I currently cannot share. 
 
 Code Snippets: 
 - KTSS
