@@ -36,35 +36,6 @@ class Autoencoder0(torch.nn.Module):
     return x.view(-1, *self.output_shape)
 
 
-class Autoencoder1(torch.nn.Module):
-  def __init__(self, input_shape, output_shape,
-               hidden_layer_width=256,
-               num_hidden_layers=2):
-    super(Autoencoder1, self).__init__()
-
-    # assign network shape parameters
-    self.input_shape = input_shape
-    self.output_shape = output_shape
-    self.num_hidden_layers = num_hidden_layers
-
-    # define network layers
-    self.fc_in  = torch.nn.Linear(np.prod(input_shape), hidden_layer_width)
-    self.bn     = torch.nn.BatchNorm1d(hidden_layer_width)
-    self.fc_hid = torch.nn.Linear(hidden_layer_width, hidden_layer_width)
-    self.fc_o   = torch.nn.Linear(hidden_layer_width, np.prod(output_shape))
-
-  def forward(self, x):
-    x = x.view(-1, np.prod(self.input_shape))
-    x = self.fc_in(x)
-    x = f.leaky_relu(x)
-    x = self.bn(x)
-    for layer in range(self.num_hidden_layers):
-      x = self.fc_hid(x)
-      x = f.leaky_relu(x)
-      x = self.bn(x)
-    x = self.fc_o(x)
-    return x.view(-1, *self.output_shape)
-
 
 class CNN0(torch.nn.Module):
   def __init__(self, input_shape, output_shape,
