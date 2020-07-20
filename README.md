@@ -11,4 +11,4 @@ Code Snippets:
 - KTSS:
  A project focused on learning the basics of MR Imaging. Without looking at already published code, I recreated the k-t sparse sense reconstruction algorithm using Python. 
 - Deep Learning Reconstruction:
-Some code that has been developed in pursuing a deep learning reconstruction algorithm for MR Imaging. 
+A collection of sample code that has been developed in pursuing a deep learning reconstruction algorithm for MR Imaging. We are working on using Deep Learning to speed up reconstruction of Magnetic Resonance images. Currently are focusing on fixing the issues of "hallucinations" that occur when using deep learning by incorporating data consistency. 
